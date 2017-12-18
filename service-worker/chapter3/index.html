@@ -12,11 +12,11 @@
 		<script src="js/script.js" type="text/javascript" charset="utf-8"></script>
 		<script type="text/javascript">
 			// 注册 service worker
-	      	if ('serviceWorker' in navigator) {             ❸
+	      	if ('serviceWorker' in navigator) {
 		        navigator.serviceWorker.register('./service-worker.js').then(function (registration) {
 		          // 注册成功
 		          console.log('ServiceWorker registration successful with scope: ', registration.scope);
-		        }).catch(function (err) {                     ❹
+		        }).catch(function (err) { 
 		          // 注册失败 :(
 		          console.log('ServiceWorker registration failed: ', err);
 		        });
