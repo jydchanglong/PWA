@@ -1,16 +1,18 @@
 
-var cacheName = 'latestTest-v1';
+var cacheName = 'latestNews-v1';
 
+// Cache our known resources during install
 self.addEventListener('install', event => {
-	event.waitUtil(
-		caches.open(cacheName)
-		.then(cache => cache.addAll([
-				'./images/wallhaven.jpg',
-				'./js/jquery.js',
-				'./index.html'
-			]);
-		);
-	);
+  event.waitUntil(
+    caches.open(cacheName)
+    .then(cache => cache.addAll([
+      './js/jquery.js',
+      './js/script.js',
+      './images/wallhaven.jpg',
+      './style/common.css',   
+      './index.html'
+    ]))
+  );
 });
 
 // Cache any new resources as they are fetched
