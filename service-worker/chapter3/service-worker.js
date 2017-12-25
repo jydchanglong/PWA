@@ -15,7 +15,7 @@ self.addEventListener('install', event => {
   );
 });
 
-   Cache any new resources as they are fetched
+   //Cache any new resources as they are fetched
 self.addEventListener('fetch', function(event) {
 event.respondWith(
     caches.match(event.request, { ignoreSearch: true })
