@@ -1,5 +1,5 @@
 
-var cacheName = 'latestNews-v1';
+var cacheName = 'latestNews-v2';
 
 // Cache our known resources during install
 self.addEventListener('install', event => {
