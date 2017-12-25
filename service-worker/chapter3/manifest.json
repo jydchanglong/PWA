@@ -2,7 +2,7 @@
 	"name": "Test Name Long Long",
 	"short_name": "Test Name",
 	"start_url": "./index.html",
-	"theme_color": "skyblue",
+	"theme_color": "#7f0000",
 	"background_color": "#ffffff",
 	"display": "standalone",
 	"icons": [{
